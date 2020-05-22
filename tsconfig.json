@@ -6,5 +6,5 @@
     "preserveConstEnums": true,
     "sourceMap": false
   },
-  "files": ["lesson1/add.ts"]
+  "include": ["lesson1/add.ts", "src/**/*.ts"]
 }

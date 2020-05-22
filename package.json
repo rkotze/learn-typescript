@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "start": "lite-server -c lite-server-config.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.2",
+    "lite-server": "^2.5.4"
   }
 }
