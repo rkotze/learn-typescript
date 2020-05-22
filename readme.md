@@ -18,7 +18,7 @@
 - Object types: generic options `const person : object` or `const person: {}`
 - Explicit object type include `key: <type>;` prior assignment.
 
-Example explicit object type
+Example explicit object type but prefer inferred for object literals
 
 ```typescript
 const person: { 
@@ -29,3 +29,5 @@ const person: {
   age: 29
 }
 ```
+
+- Array support the core type, `list: string[]` all values in array must be of type `string`. `list: any[]` means any value type can be stored.
