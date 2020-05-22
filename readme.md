@@ -31,3 +31,19 @@ const person: {
 ```
 
 - Array support the core type, `list: string[]` all values in array must be of type `string`. `list: any[]` means any value type can be stored.
+- **Tuples** is a TypeScript type, fixed length array which can have mixed value types
+- `[].push` is an exception from erroring when adding to the array.
+
+Inferring no longer helps us when we want to use a tuple and be explicit about type and length.
+
+```typescript
+const person: { 
+  name: string;
+  age: number;
+  role: [number, string]
+} = {
+  name: 'jones',
+  age: 29,
+  role: [1, 'author']
+}
+```
