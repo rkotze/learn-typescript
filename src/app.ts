@@ -35,3 +35,15 @@ const personRole: {
 
 // personRole.role[0] = 'ksks'; will error as its a should be a number
 // personRole.role.push('abc'); no error, typescript exception
+
+
+// ENUMS
+
+enum Role { ADMIN, READ_ONLY, AUTHOR}
+
+const personEnum = {
+  name: 'jones',
+  age: 29,
+  role: Role.ADMIN
+}
+console.log("personEnum", personEnum)

@@ -10,6 +10,9 @@
 
 ### Learning notes
 
+- [22 May 2020](#22-may-2020)
+- [25 May 2020](#25-may-2020)
+
 #### 22 May 2020
 
 - Typescript uses static types and evaluates during compiling the code. Quick feedback look that there is an issue in the code.
@@ -47,3 +50,9 @@ const person: {
   role: [1, 'author']
 }
 ```
+
+#### 25 May 2020
+
+- Enums in TypeScript not JavaScript. Define new enum `enum <TypeName> {}` automatically assigns numbers to labels in order from zero by default.
+- Assign values to labels can be any value `{ ADMIN = 'ADMIN', AUTHOR: 5 }`
+- `any` will match any type but this is the same as vanilla JS and negates the use of TypeScript.
