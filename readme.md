@@ -59,3 +59,4 @@ const person: {
 - Union type to set multiple types using `|`. e.g. `input: number | string`. Probably will need to use `typeof` operator to branch logic.
 - Literal types are useful with union types as you can specify a list of valid values e.g. `conversion: 'as-number' | 'as-text'`
 - Create **alias** types which allow you to combine types that are repeated through the code. `type Combinable = number | string`
+- TypeScript uses `void` type for functions which do not "return" explicitly. TypeScript distinguishes a difference between `return undefined` and JS implicit `return undefined` for functions without a return.
