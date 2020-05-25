@@ -56,3 +56,6 @@ const person: {
 - Enums in TypeScript not JavaScript. Define new enum `enum <TypeName> {}` automatically assigns numbers to labels in order from zero by default.
 - Assign values to labels can be any value `{ ADMIN = 'ADMIN', AUTHOR: 5 }`
 - `any` will match any type but this is the same as vanilla JS and negates the use of TypeScript.
+- Union type to set multiple types using `|`. e.g. `input: number | string`. Probably will need to use `typeof` operator to branch logic.
+- Literal types are useful with union types as you can specify a list of valid values e.g. `conversion: 'as-number' | 'as-text'`
+- Create **alias** types which allow you to combine types that are repeated through the code. `type Combinable = number | string`
