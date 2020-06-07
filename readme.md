@@ -72,3 +72,4 @@ const person: {
 - **Function types** allow you to specify parameter types and return type using the JavaScript arrow function style: `let combineValue: (a: number, b: number) => <return type>`
 - `unknown` type: means you can assign any value type to it but is different to `any`. Unknown variable does not allow you to assign its value to another variable with a specified type, because the value is unknown.
 - **How** do you assign the `unknown` value to a specific type? Wrap in a conditional type check and TypeScript recognise that and won't error: `if(typeof userInput === 'string')`.
+- `never` type: for functions that **never** return, this would be used when a function `throws` every time it's called. For example an error building function `(message, code) => throws { message, code }` will never return;

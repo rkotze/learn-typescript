@@ -39,3 +39,9 @@ userInput = "value";
 if (typeof userInput === "string") {
   userName = userInput;
 }
+
+// NEVER type
+// for functions that never return a value but throw a value
+function generateError(message: string, errorCode: number): never {
+  throw { message, errorCode };
+}
