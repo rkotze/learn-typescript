@@ -7,7 +7,7 @@
   - [Learning notes](#learning-notes)
       - [22 May 2020 basics](#22-may-2020-basics)
       - [25th May 2020 basics](#25th-may-2020-basics)
-      - [7th June 2020](#7th-june-2020)
+      - [7th June 2020 basics](#7th-june-2020-basics)
 
 ## Setup
 
@@ -63,6 +63,12 @@ const person: {
 - Union type to set multiple types using `|`. e.g. `input: number | string`. Probably will need to use `typeof` operator to branch logic.
 - Literal types are useful with union types as you can specify a list of valid values e.g. `conversion: 'as-number' | 'as-text'`
 - Create **alias** types which allow you to combine types that are repeated through the code. `type Combinable = number | string`
-- TypeScript uses `void` type for functions which do not "return" explicitly. TypeScript distinguishes a difference between `return undefined` and JS implicit `return undefined` for functions without a return.
+- TypeScript uses `void` type for functions which do not **return explicitly**. TypeScript distinguishes a difference between `return undefined` and JS implicit `return undefined` for functions without a return.
 
-#### 7th June 2020
+#### 7th June 2020 basics
+
+- Assign a value to variable after defining it assigns a type of `any` because of Typescripts default behaviour to infer a value type. e.g. `let combineValues;` would be of type `any`.
+- You can assign a type to the defined variable however, if you want to specify a particular function definition you need more than just `let combineValues: Function;`
+- **Function types** allow you to specify parameter types and return type using the JavaScript arrow function style: `let combineValue: (a: number, b: number) => <return type>`
+- `unknown` type: means you can assign any value type to it but is different to `any`. Unknown variable does not allow you to assign its value to another variable with a specified type, because the value is unknown.
+- **How** do you assign the `unknown` value to a specific type? Wrap in a conditional type check and TypeScript recognise that and won't error: `if(typeof userInput === 'string')`.
