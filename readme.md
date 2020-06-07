@@ -67,9 +67,9 @@ const person: {
 
 #### 7th June 2020 basics
 
-- Assign a value to variable after defining it assigns a type of `any` because of Typescripts default behaviour to infer a value type. e.g. `let combineValues;` would be of type `any`.
-- You can assign a type to the defined variable however, if you want to specify a particular function definition you need more than just `let combineValues: Function;`
-- **Function types** allow you to specify parameter types and return type using the JavaScript arrow function style: `let combineValue: (a: number, b: number) => <return type>`
-- `unknown` type: means you can assign any value type to it but is different to `any`. Unknown variable does not allow you to assign its value to another variable with a specified type, because the value is unknown.
+- Defining a variable assigns a type of `any` because of Typescripts default behaviour to infer a value type. e.g. `let combineValues;` would be of type `any`.
+- You can assign a type to the defined variable however, if you want to specify a particular function definition you would need more than just `let combineValues: Function;`
+- **Function type** allows you to specify parameter types and a return type using the JavaScript arrow function style: `let combineValue: (a: number, b: number) => <return type>`
+- **unknown type**: means you can assign any value type to it but is different to `any`. Unknown variable does not allow you to assign its value to another variable with a specified type, because the value is unknown.
 - **How** do you assign the `unknown` value to a specific type? Wrap in a conditional type check and TypeScript recognise that and won't error: `if(typeof userInput === 'string')`.
-- `never` type: for functions that **never** return, this would be used when a function `throws` every time it's called. For example an error building function `(message, code) => throws { message, code }` will never return;
+- **never type**: for functions that **never** return, this would be used when a function `throws` every time it's called. For example an error building function `(message, code) => throws { message, code }` will never return;
