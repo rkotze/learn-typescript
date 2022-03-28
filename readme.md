@@ -9,6 +9,10 @@
       - [25th May 2020 basics](#25th-may-2020-basics)
       - [7th June 2020 basics](#7th-june-2020-basics)
 
+## Links
+
+[Interfaces VS Types handbook](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
+
 ## Setup
 
 - `npm i`
